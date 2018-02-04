@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sukeu.quizz.MainActivity">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/quizz"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lineQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:id="@+id/practice"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:src="@drawable/practice" />
+
+            <TextView
+                android:background="@color/ColorGround"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="practice"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="@dimen/txtSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineLearn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/learn"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:src="@drawable/learn" />
+
+            <TextView
+                android:background="@color/ColorGround"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="learn"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="@dimen/txtSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:id="@+id/lineEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/contact"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:src="@drawable/contact" />
+
+            <TextView
+                android:background="@color/ColorGround"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="contact us"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="@dimen/txtSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:src="@drawable/about" />
+
+            <TextView
+                android:background="@color/ColorGround"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="About us"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="@dimen/txtSize"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
